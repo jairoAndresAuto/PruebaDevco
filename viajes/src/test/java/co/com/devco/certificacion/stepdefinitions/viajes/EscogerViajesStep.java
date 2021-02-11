@@ -1,4 +1,4 @@
-package co.com.devco.certificacion.stepdefinitions.viajehotels;
+package co.com.devco.certificacion.stepdefinitions.viajes;
 
 import co.com.devco.certificacion.questions.ValidarTexto;
 import co.com.devco.certificacion.stepdefinitions.GeneralStepDefinitions;
@@ -7,7 +7,6 @@ import co.com.devco.certificacion.task.*;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.junit.After;
 
 import java.util.List;
 import java.util.Map;
@@ -16,7 +15,7 @@ import static co.com.devco.certificacion.userinterfase.pagar.*;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-public class EscogerHotelStep extends GeneralStepDefinitions {
+public class EscogerViajesStep extends GeneralStepDefinitions {
 
     @Given("^luego de ingresar a la pagina de travelocity$")
     public void luegoDeIngresarALaPaginaDeTravelocity() {

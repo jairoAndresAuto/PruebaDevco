@@ -1,4 +1,4 @@
-package co.com.devco.certificacion.runners.viajehotels;
+package co.com.devco.certificacion.runners.viajes;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
@@ -7,10 +7,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        tags = "@5",
         features = "src/test/resources/features/escoger_hotel.feature",
         glue = "co.com.devco.certificacion.stepdefinitions",
         snippets = SnippetType.CAMELCASE)
-public class EscogerHotel {
+public class EscogerViajes {
 
 }
