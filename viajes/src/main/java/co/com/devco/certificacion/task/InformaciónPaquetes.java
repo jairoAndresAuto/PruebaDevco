@@ -36,7 +36,7 @@ public class InformaciónPaquetes implements Task {
                 Enter.theValue(informacion.get(0).get("origen")).into(TXT_CIUDAD_DESDE),
                 Click.on(CIUDADES_DESDE),
                 Click.on(BTN_SELECCIONAR_DESTINO),
-                Enter.theValue("Argentina").into(TXT_CIUDAD_DESTINO),
+                Enter.theValue(informacion.get(0).get("destino")).into(TXT_CIUDAD_DESTINO),
                 Click.on(CIUDADES_DESTINO),
                 Click.on(BTN_CHECKIN),
                 BuscarFecha.deCalentario(informacion.get(0).get("fecha_inicial")),

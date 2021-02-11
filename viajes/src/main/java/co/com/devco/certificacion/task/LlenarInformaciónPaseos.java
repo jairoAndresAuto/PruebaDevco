@@ -30,7 +30,7 @@ public class LlenarInformaciónPaseos implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(BTN_CIUDAD_DESTINO),
-                Enter.theValue("Argentina").into(TXT_CIUDAD_DESTINO),
+                Enter.theValue(informacion.get(0).get("destino")).into(TXT_CIUDAD_DESTINO),
                 Click.on(CIUDADES_DESTINO),
                 Click.on(BTN_CHECKIN),
                 BuscarFecha.deCalentario(informacion.get(0).get("fecha_inicial")),

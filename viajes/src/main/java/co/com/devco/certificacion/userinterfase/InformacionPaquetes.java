@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.targets.Target;
 public class InformacionPaquetes {
 
     public static Target TXT_CIUDAD_DESDE=
-            Target.the("ingresar seleccionar destino").located(By.xpath("//input[@data-stid='location-field-origin-menu-input']"));
+            Target.the("ingresar seleccionar desde").located(By.xpath("//input[@data-stid='location-field-origin-menu-input']"));
 
     public static Target TXT_CIUDAD_DESTINO=
             Target.the("ingresar seleccionar destino").located(By.xpath("//input[@data-stid='location-field-destination-menu-input']"));

@@ -5,7 +5,6 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.EnterValueIntoTarget;
 
 import java.util.List;
 import java.util.Map;
@@ -24,7 +23,7 @@ public class LlenarInformaciónHotel implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(BTN_SELECCIONAR_DESTINO),
-                Enter.theValue("Argentina").into(TXT_CIUDAD_DESTINO),
+                Enter.theValue(informacion.get(0).get("Pais")).into(TXT_CIUDAD_DESTINO),
                 Click.on(CIUDADES_DESTINO),
                 Click.on(BTN_CHECKIN),
                 BuscarFecha.deCalentario(informacion.get(0).get("fecha_inicial")),

@@ -24,7 +24,6 @@ public class SeleccionarVueloDestino implements Task {
                 WaitUntil.the(BTN_VUELO_REGRESO.of(numeroVuelto),isClickable()),
                 Scroll.to(BTN_VUELO_REGRESO.of(numeroVuelto)),
                 Click.on(BTN_VUELO_REGRESO.of(numeroVuelto))
-
         );
     }
 

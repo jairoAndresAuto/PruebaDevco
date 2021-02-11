@@ -83,4 +83,17 @@ public class EscogerHotelStep extends GeneralStepDefinitions {
         theActorInTheSpotlight().should(seeThat(ValidarTexto.conMensaje(mensaje.get(0).get("mensaje"), LBL_PASEOS)));
     }
 
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    @When("^proceded a ingresar la información solicitada, escoje el crucero y lo reserva$")
+    public void procededAIngresarLaInformaciónSolicitadaEscojeElCruceroYLoReserva(List<Map<String,String>> informacion) {
+        theActorInTheSpotlight().attemptsTo(LlenarInformacionCrucero.con(informacion),
+                SeleccionarCrucero.con(informacion.get(0).get("numCreucero"),informacion.get(0).get("numHabitacion")));
+    }
+
+    @Then("^se visualiza el siguiente anuncio (.*)$")
+    public void seVisualizaElSiguienteAnuncioPriceDetails(String mensaje) {
+        theActorInTheSpotlight().should(seeThat(ValidarTexto.conMensaje(mensaje, LBL_CRUCERO)));
+    }
+
 }

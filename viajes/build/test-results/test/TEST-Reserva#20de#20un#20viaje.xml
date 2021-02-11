@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Reserva de un viaje" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-11T04:22:18" hostname="DESKTOP-5VJR672" time="43.114">
+<testsuite name="Reserva de un viaje" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-11T14:42:48" hostname="DESKTOP-5VJR672" time="79.239">
   <properties/>
-  <testcase name="Seleccionar Paseos" classname="Reserva de un viaje" time="43.114"/>
+  <testcase name="Seleccionar Cruceros" classname="Reserva de un viaje" time="79.239"/>
   <system-out><![CDATA[
 
 
@@ -40,15 +40,25 @@
 
 
 
+
+
+
+
 ]]></system-out>
-  <system-err><![CDATA[feb 10, 2021 11:22:18 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[feb 11, 2021 9:42:48 AM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 88.0.4324.27 (6347fe8bf1e48bd0c54d07dc55ca011cf40861c9-refs/branch-heads/4324@{#450}) on port 48172
+Starting ChromeDriver 88.0.4324.27 (6347fe8bf1e48bd0c54d07dc55ca011cf40861c9-refs/branch-heads/4324@{#450}) on port 5721
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-feb 10, 2021 11:22:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+feb 11, 2021 9:42:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
+[1613054606.056][SEVERE]: Timed out receiving message from renderer: 10.000
+[1613054606.056][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1613054616.057][SEVERE]: Timed out receiving message from renderer: 10.000
+[1613054626.077][SEVERE]: Timed out receiving message from renderer: 10.000
+[1613054626.078][WARNING]: screenshot failed, retrying timeout: Timed out receiving message from renderer: 10.000
+[1613054636.083][SEVERE]: Timed out receiving message from renderer: 10.000
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
@@ -57,7 +67,7 @@ INFORMACIÓN: Detected dialect: W3C
  (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
         /_/                                                                
 
-TEST PASSED: Seleccionar Paseos
+TEST PASSED: Seleccionar Cruceros
 ----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>

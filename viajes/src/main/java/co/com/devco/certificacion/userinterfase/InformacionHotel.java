@@ -20,7 +20,7 @@ public class InformacionHotel {
     public static Target BTN_DONE=
             Target.the("boton hecho").located(By.xpath("(//button[contains(.,'Done')])[1]//span"));
     public static Target BTN_BUSCAR=
-            Target.the("boton hecho").located(By.xpath("//div[@class='uitk-layout-grid-item uitk-layout-grid-item-columnspan-small-1 uitk-layout-grid-item-columnspan-medium-2 uitk-layout-grid-item-columnspan-large-2 ']"));
+            Target.the("boton buscar").located(By.xpath("//div[@class='uitk-layout-grid-item uitk-layout-grid-item-columnspan-small-1 uitk-layout-grid-item-columnspan-medium-2 uitk-layout-grid-item-columnspan-large-2 ']"));
 
 
 
